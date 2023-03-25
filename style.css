@@ -1,0 +1,217 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #489fdb;
+    font-family: 'Poppins';
+    color: white;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin: 15px 0px 15px 0px;
+}
+header .firstdiv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-evenly;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+header ul li {
+    list-style: none;
+    padding-top: 20px;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50px;
+    font-family: 'Poppins';
+}
+header ul li a:hover{
+    background: white;
+    color: #489fdb;
+}
+#meow {
+    background-color:#489fdb;
+    border: none;
+    
+}
+#meow:hover{
+    transform:translate(0, -7px);
+}
+#meow a{
+    color: white;
+}
+#meow:active {
+    border: none;
+}
+
+section {
+    position: relative;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* background: linear-gradient(to top, #489fdb,transparent); */
+    z-index: 10000;
+}
+.div1 {
+    padding-left: 80px !important;
+}
+.animated {
+    position: relative;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animated.active{
+    transform: translateX(40px);
+    opacity: 1;
+}
+.reveal {
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal.active{
+    transform: translateX(40px);
+    opacity: 1;
+}
+.dark-mode {
+    background-color: #203354;
+}
+.dark-mode i {
+    background-color: #203354;
+    color: white;
+}
+.dark-mode header ul li a:hover{
+    background: white;
+    color: #203354;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.dark-mode section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    /* background: linear-gradient(to top, #203354,transparent); */
+    z-index: 10000;
+}
+.fadeinleft {
+    font-size: 90px;
+}
+.div3 {
+    text-align: center;
+}
+.butt {
+    border: none;
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 60px;
+    width: 12px;
+    background-color: #489fdb;
+}
+.email {
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 50px;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    border: none;
+}
+.email a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins';
+}
+.email:hover {
+box-shadow: inset 400px 0 0 0 #203354;
+}
+.email:hover a{
+color: white;
+}   
+.dark-mode .email:hover {
+box-shadow: inset 400px 0 0 0 #489fdb;
+}
+.dark-mode .email:hover a{
+color: black;
+}
+.dark-mode .butt{
+background-color: #203354;
+border: none;
+}
+.dark-mode .buttons {
+    background-color: #203354;
+}
+.dark-mode #meow {
+    background-color: #203354;
+}
+.wikipedia, .ecommerce, .notesapp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#note, #wiki, #commerce {
+    padding-right: 40px;
+}
+.txt {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 40px;
+    color: #203354;
+}
+.txt a{
+    text-decoration: none;
+    color: #203354;
+}
+.projects {
+    padding-left: 40px;
+}
+.fadeinright{
+    color: #203354;
+}
+.dark-mode .fadeinright{
+    color: #489fdb;
+}
+.dark-mode .txt {
+    color: #489fdb;
+}
+.dark-mode .txt a{
+    color: #489fdb;
+}
+.image {
+    margin-right: 40px;
+}
+
+
